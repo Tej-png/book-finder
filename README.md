@@ -1,3 +1,12 @@
+# Book Finder
+This project is made with Google books API to find the book you want to find
+
+#Dependencies
+Reactstrap
+React toastify
+Bootstap
+Axios
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
