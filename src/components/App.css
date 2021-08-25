@@ -1,0 +1,65 @@
+body {
+  background-color: #F9F9F9;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-img {
+  position: relative;
+  top: -40px;
+  left: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+}
+.header {
+  padding-top: 5rem;
+  font-weight: 700;
+  opacity: 40%;
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  position: absolute;
+  right : 0px;
+  top: 15px;
+}
+
+.card-author {
+  margin-top: 5px;
+}
+.card-title {
+  display: inline;
+  font-weight: 700;
+  color: rgb(124, 117, 117);
+}
+.text-muted {
+  color: #a7a4a4;
+  line-height: 1.5;
+}
+
+.card-btn {
+  margin-top: 1rem;
+}
+
+.card{
+  margin-bottom: 5rem;
+  width: 700px;
+  height: 350px;
+  
+
+}
+
+.search {
+  width: 80%;
+  padding-left: 20rem;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header{
+      margin-left: 1rem;
+    }
+    .search{
+      width: 90%;
+      padding-left: 4rem;
+    }
+}
