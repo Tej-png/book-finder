@@ -11,7 +11,6 @@ function App() {
   const [items, setItems] = useState([]);
 
   const handleCards = (lod) => {
-    console.log(items);
     const cards = items.map((card, i) => {
       let thumbnail = "";
       let publisher = "";

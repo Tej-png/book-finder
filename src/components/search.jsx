@@ -6,6 +6,10 @@ import axios from 'axios';
 
 function Search(props) {
     const [query, setQuery] = useState('')
+    function clear(){
+        setQuery('')
+    }
+
     function handleClick(){
         if(!query){
             toast.error('Enter Name of the Book')
@@ -31,8 +35,11 @@ function Search(props) {
         <div className='search d-flex justify-content-center align-item-center'>
             <ToastContainer></ToastContainer>
             <InputGroup size='lg' className='mb-3'>
-                <Input placeholder='Search Book' value={query} onChange={(e)=>{setQuery(e.target.value)}}>
+                <Input placeholder='Search Book' className='search-input' value={query} onChange={(e)=>{setQuery(e.target.value)}}>
+                
                 </Input>
+                <InputGroupAddon addonType="append" className='cross'><div><i class="fas fa-times" onClick={clear}></i></div></InputGroupAddon>
+                
             </InputGroup>
             <InputGroupAddon addonType='append'>
                 <Button color='success' className='btn btn-lg' onClick={handleClick}>search</Button>
