@@ -56,7 +56,7 @@ function App() {
   };
 
   return (
-    <div className='w-100 h-100'>
+    <div className='main-container w-100 h-100'>
       <ToastContainer></ToastContainer>
       <Header></Header>
       <Search

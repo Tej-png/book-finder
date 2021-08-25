@@ -15,14 +15,13 @@ function Cards(props) {
     setModel(!model);
   };
   return (
-    <Card style={{ width: "600px" }} className="card">
+    <Card className="card">
       <CardImg
         top
-        style={{ width: "222px", height: "333px" }}
         src={props.thumbnail}
         className='card-img'
       ></CardImg>
-      <CardBody style={{width:'300px'}} className='card-body'>
+      <CardBody className='card-body'>
         <CardTitle className="card-info card-title" tag="h3">
           {props.title}
         </CardTitle>

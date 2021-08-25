@@ -5,6 +5,8 @@ body {
 }
 
 .card-img {
+  width: 222px;
+  height: 333px;
   position: relative;
   top: -40px;
   left: 20px;
@@ -13,14 +15,17 @@ body {
 .header {
   padding-top: 5rem;
   font-weight: 700;
-  opacity: 40%;
   margin-bottom: 2rem;
 }
 
+.card{
+  width: 80%;
+}
 .card-body {
   position: absolute;
   right : 0px;
   top: 15px;
+  max-width: 300px;
 }
 
 .card-author {
@@ -42,7 +47,7 @@ body {
 
 .card{
   margin-bottom: 5rem;
-  width: 700px;
+  width: 600px;
   height: 350px;
   
 
@@ -67,12 +72,51 @@ body {
   margin-bottom: 5rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
     .header{
       margin-left: 1rem;
     }
+
+
+    .search-input{
+      size: 100px;
+
+      
+    }
+
+    .main-container {
+      width: 100%;
+      height: 100%;
+    }
+    .card {
+      width: 350px;
+      flex-direction: column-reverse;
+    }
+    .card-img {
+      width:150px ;
+      height: 300px;
+      top: -100px;
+      left: 20px;
+    }
+
+    .card-body {
+      right : 0px;
+      top: 10px;
+      font-size: 6px;
+      max-width: 180px;
+      padding-right: 0;
+    }
+
+    .card-btn {
+      font-size: small;
+    }
+    .btn-search {
+      font-size: small;
+      padding: 12px 5px 13px 5px;
+      border-radius: 0;
+    }
     .search{
       width: 90%;
-      padding-left: 4rem;
+      padding-left: 3rem;
     }
 }
