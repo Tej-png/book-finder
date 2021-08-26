@@ -15,27 +15,29 @@ function App() {
       let thumbnail = "";
       let publisher = "";
       let author = "";
-      if (card.volumeInfo.imageLinks.thumbnail) {
-        thumbnail =card.volumeInfo.imageLinks.thumbnail;
+      if (card.volumeInfo.imageLinks) {
+        if (card.volumeInfo.imageLinks.thumbnail) {
+          thumbnail = card.volumeInfo.imageLinks.thumbnail;
+        }
       }
       if (card.volumeInfo.publisher) {
-        publisher =card.volumeInfo.publisher
+        publisher = card.volumeInfo.publisher;
       } else {
-        publisher = 'Not Found'
+        publisher = "Not Found";
       }
       if (card.volumeInfo.authors) {
-        author =card.volumeInfo.authors;
+        author = card.volumeInfo.authors;
       } else {
-        author = "Author Not Found"
+        author = "Author Not Found";
       }
       return (
         <div className="col-lg-6" key={card.id}>
-          <Cards 
-          thumbnail={thumbnail}
-          title={card.volumeInfo.title}
-          author={author}
-          publisher={publisher}
-          previewLink={card.volumeInfo.previewLink}
+          <Cards
+            thumbnail={thumbnail}
+            title={card.volumeInfo.title}
+            author={author}
+            publisher={publisher}
+            previewLink={card.volumeInfo.previewLink}
           ></Cards>
         </div>
       );
@@ -56,7 +58,7 @@ function App() {
   };
 
   return (
-    <div className='main-container w-100 h-100'>
+    <div className="main-container w-100 h-100">
       <ToastContainer></ToastContainer>
       <Header></Header>
       <Search
